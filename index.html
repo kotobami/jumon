@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>著者セントラル</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="header-image.jpg" alt="ヘッダー画像" class="header-image">
+            <img src="profile-icon.jpg" alt="プロフィールアイコン" class="profile-icon">
+        </div>
+        <div class="profile-info">
+            <h1>著者名</h1>
+            <p>著者の簡単な紹介文がここに入ります。著者の経歴や作品の特徴などを簡潔に記述します。</p>
+        </div>
+        <div class="tabs">
+            <button class="tab-button active" onclick="showTab('philosophy')">哲学書</button>
+            <button class="tab-button" onclick="showTab('novels')">小説</button>
+            <button class="tab-button" onclick="showTab('photos')">写真集</button>
+        </div>
+        <div id="philosophy" class="tab-content active">
+            <ul>
+                <li>哲学書1</li>
+                <li>哲学書2</li>
+                <li>哲学書3</li>
+            </ul>
+        </div>
+        <div id="novels" class="tab-content">
+            <ul>
+                <li>小説1</li>
+                <li>小説2</li>
+                <li>小説3</li>
+            </ul>
+        </div>
+        <div id="photos" class="tab-content">
+            <ul>
+                <li>写真集1</li>
+                <li>写真集2</li>
+                <li>写真集3</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function showTab(tabId) {
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+            const selectedTab = document.getElementById(tabId);
+            selectedTab.classList.add('active');
+
+            const buttons = document.querySelectorAll('.tab-button');
+            buttons.forEach(button => {
+                button.classList.remove('active');
+            });
+            const selectedButton = document.querySelector(`button[onclick="showTab('${tabId}')"]`);
+            selectedButton.classList.add('active');
+        }
+    </script>
+</body>
+</html>
+​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
