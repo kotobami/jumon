@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>著者セントラル</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="header-image.jpg" alt="ヘッダー画像" class="header-image">
+            <img src="profile-icon.jpg" alt="プロフィールアイコン" class="profile-icon">
+        </div>
+        <div class="profile-info">
+            <h1>言喰</h1>
+            <p>哲学者｜漫画家、空手家、宅建士、ゲームクリエイター等々、さまざまなことをやってきました。今はのんびりゆるりと生きています。</p>
+        </div>
+        <div class="tabs">
+            <button class="tab-button active" onclick="showTab('philosophy')">哲学書</button>
+            <button class="tab-button" onclick="showTab('novels')">小説</button>
+            <button class="tab-button" onclick="showTab('photos')">写真集</button>
+        </div>
+        <div id="philosophy" class="tab-content active">
+            <div class="book-item">
+                <div class="book-text">
+                    <h3>言喰諸論</h3>
+                    <p>言喰の主著である哲学書。超越論や分析哲学をはじめとして、さまざまな議論を著している。その中では、多重帰納法を用いたグルーのパラドックスの解消法を提案している。</p>
+                </div>
+                <img src="book1-cover.jpg" alt="哲学書1の表紙" class="book-cover">
+            </div>
+            <div class="book-item">
+                <div class="book-text">
+                    <h3>未刊</h3>
+                    <p></p>
+                </div>
+                <img src="book2-cover.jpg" alt="哲学書2の表紙" class="book-cover">
+            </div>
+        </div>
+        <div id="novels" class="tab-content">
+            <div class="book-item">
+                <div class="book-text">
+                    <h3>赤淵村の記録</h3>
+                    <p>『言喰諸論』２－３０節に著した議論の敷衍と実践であり、因習の神経症的な側面を描いた作品である。</p>
+                </div>
+                <img src="novel1-cover.jpg" alt="小説1の表紙" class="book-cover">
+            </div>
+            <div class="book-item">
+                <div class="book-text">
+                    <h3>未刊</h3>
+                    <p></p>
+                </div>
+                <img src="novel2-cover.jpg" alt="小説2の表紙" class="book-cover">
+            </div>
+        </div>
+        <div id="photos" class="tab-content">
+            <div class="book-item">
+                <div class="book-text">
+                    <h3>架空の廃水族館・廃図書館</h3>
+                    <p>写真集1の簡単な紹介文。</p>
+                </div>
+                <img src="photo1-cover.jpg" alt="写真集1の表紙" class="book-cover">
+            </div>
+            <div class="book-item">
+                <div class="book-text">
+                    <h3>写真集2</h3>
+                    <p>写真集2の簡単な紹介文。</p>
+                </div>
+                <img src="photo2-cover.jpg" alt="写真集2の表紙" class="book-cover">
+            </div>
+        </div>
+    </div>
+    <script>
+        function showTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+            document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+            document.querySelector(`button[onclick="showTab('${tabId}')"]`).classList.add('active');
+        }
+    </script>
+</body>
+</html>
+​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
