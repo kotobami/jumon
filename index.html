@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>著者セントラル</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <video class="header-image" autoplay loop muted playsinline>
+                <source src="header-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="profile-icon-container">
+            <video class="profile-icon" autoplay loop muted playsinline>
+                <source src="icon-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="profile-info">
+            <h1>言喰</h1>
+            <p>ここは拙著の編纂と案内をするための空間になります。本の表紙をタップしていただくと、それぞれの購入ページに飛びます。</p>
+        </div>
+        <div class="tabs">
+            <button class="tab-button active" onclick="showTab('philosophy')">哲学書</button>
+            <button class="tab-button" onclick="showTab('novels')">小説</button>
+            <button class="tab-button" onclick="showTab('photos')">写真集</button>
+            <button class="tab-button" onclick="showTab('study')">学習帳</button>
+        </div>
+        <div id="philosophy" class="tab-content active">
+            <div class="book-item">
+                <div class="book-text">
+                    <h3>言喰諸論</h3>
+                    <p>言喰の主著である哲学書。超越論や分析哲学をはじめとして、さまざまな議論を著している。その中では、多重帰納法を用いたグルーのパラドックスの解消法を提案している。</p>
+                </div>
+                <div class="book-cover-container">
+                    <a href="https://amzn.asia/d/0VygwY0">
+                        <img src="book1-cover.jpg" alt="哲学書1の表紙" class="book-cover">
+                    </a>
+                    <p class="book-price">¥3000</p>
+                </div>
+            </div>
+            <div class="book-item">
+                <div class="book-text">
+                    <h3>未刊</h3>
+                    <p></p>
+                </div>
+                <div class="book-cover-container">
+                    <a href="#">
+                        <img src="book2-cover.jpg" alt="哲学書2の表紙" class="book-cover">
+                    </a>
+                    <p class="book-price">未定</p>
+                </div>
+            </div>
+        </div>
+        <div id="novels" class="tab-content">
+            <div class="book-item">
+                <div class="book-text">
+                    <h3>赤淵村の記録</h3>
+                    <p>『言喰諸論』２－３０節に著した議論の敷衍と実践であり、因習の神経症的な側面を描いた作品である。</p>
+                </div>
+                <div class="book-cover-container">
+                    <a href="https://www.amazon.co.jp/%E8%B5%A4%E6%B7%B5%E6%9D%91%E3%81%AE%E8%A8%98%E9%8C%B2-%E8%A8%80%E5%96%B0-ebook/dp/B0DYYJY3VG/?_encoding=UTF8&pd_rd_w=UDty4&content-id=amzn1.sym.bb272e13-1a68-41b0-a370-44a252d487ac&pf_rd_p=bb272e13-1a68-41b0-a370-44a252d487ac&pf_rd_r=358-9358612-4206952&pd_rd_wg=sPZot&pd_rd_r=a9c0f482-0cc8-41c1-a01f-5b6a2505efb4&ref_=aufs_ap_sc_dsk">
+                        <img src="novel1-cover.jpg" alt="小説1の表紙" class="book-cover">
+                    </a>
+                    <p class="book-price">¥700</p>
+                </div>
+            </div>
+            <div class="book-item">
+                <div class="book-text">
+                    <h3>未刊</h3>
+                    <p></p>
+                </div>
+                <div class="book-cover-container">
+                    <a href="#">
+                        <img src="novel2-cover.jpg" alt="小説2の表紙" class="book-cover">
+                    </a>
+                    <p class="book-price">未定</p>
+                </div>
+            </div>
+        </div>
+        <div id="photos" class="tab-content">
+            <div class="book-item">
+                <div class="book-text">
+                    <h3>架空の廃水族館・廃図書館</h3>
+                    <p>AI を用いて描出した架空の写真集であり、言喰の性癖を素直に表現している。</p>
+                </div>
+                <div class="book-cover-container">
+                    <a href="https://www.amazon.co.jp/%E6%9E%B6%E7%A9%BA%E3%81%AE%E5%BB%83%E6%B0%B4%E6%97%8F%E9%A4%A8%E3%83%BB%E5%BB%83%E5%9B%B3%E6%9B%B8%E9%A4%A8-%E8%A8%80%E5%96%B0-ebook/dp/B0DZWT5RDJ/?_encoding=UTF8&pd_rd_w=UDty4&content-id=amzn1.sym.bb272e13-1a68-41b0-a370-44a252d487ac&pf_rd_p=bb272e13-1a68-41b0-a370-44a252d487ac&pf_rd_r=358-9358612-4206952&pd_rd_wg=sPZot&pd_rd_r=a9c0f482-0cc8-41c1-a01f-5b6a2505efb4&ref_=aufs_ap_sc_dsk">
+                        <img src="photo1-cover.jpg" alt="写真集1の表紙" class="book-cover">
+                    </a>
+                    <p class="book-price">¥500</p>
+                </div>
+            </div>
+            <div class="book-item">
+                <div class="book-text">
+                    <h3>未刊</h3>
+                    <p></p>
+                </div>
+                <div class="book-cover-container">
+                    <a href="#">
+                        <img src="photo2-cover.jpg" alt="写真集2の表紙" class="book-cover">
+                    </a>
+                    <p class="book-price">未定</p>
+                </div>
+            </div>
+        </div>
+        <div id="study" class="tab-content">
+            <div class="book-item">
+                <div class="book-text">
+                    <h3>bamii note gray style</h3>
+                    <p></p>
+                </div>
+                <div class="book-cover-container">
+                    <a href="https://www.amazon.co.jp/bamii-note-gray-style-%E8%A8%80%E5%96%B0/dp/B0D5WK6NVB/?_encoding=UTF8&pd_rd_w=UDty4&content-id=amzn1.sym.bb272e13-1a68-41b0-a370-44a252d487ac&pf_rd_p=bb272e13-1a68-41b0-a370-44a252d487ac&pf_rd_r=358-9358612-4206952&pd_rd_wg=sPZot&pd_rd_r=a9c0f482-0cc8-41c1-a01f-5b6a2505efb4&ref_=aufs_ap_sc_dsk">
+                        <img src="study1-cover.jpg" alt="学習帳1の表紙" class="book-cover">
+                    </a>
+                    <p class="book-price">¥1210</p>
+                </div>
+            </div>
+            <div class="book-item">
+                <div class="book-text">
+                    <h3>bamii note green style</h3>
+                    <p></p>
+                </div>
+                <div class="book-cover-container">
+                    <a href="https://www.amazon.co.jp/bamii-note-green-style-%E8%A8%80%E5%96%B0/dp/B0D5WJVCBC/?_encoding=UTF8&pd_rd_w=UDty4&content-id=amzn1.sym.bb272e13-1a68-41b0-a370-44a252d487ac&pf_rd_p=bb272e13-1a68-41b0-a370-44a252d487ac&pf_rd_r=358-9358612-4206952&pd_rd_wg=sPZot&pd_rd_r=a9c0f482-0cc8-41c1-a01f-5b6a2505efb4&ref_=aufs_ap_sc_dsk">
+                        <img src="study2-cover.jpg" alt="学習帳2の表紙" class="book-cover">
+                    </a>
+                    <p class="book-price">¥1210</p>
+                </div>
+            </div>
+            <div class="book-item">
+                <div class="book-text">
+                    <h3>bamii note red style</h3>
+                    <p></p>
+                </div>
+                <div class="book-cover-container">
+                    <a href="https://amzn.asia/d/3yueemb">
+                        <img src="study3-cover.jpg" alt="学習帳3の表紙" class="book-cover">
+                    </a>
+                    <p class="book-price">¥1210</p>
+                </div>
+            </div>
+            <div class="book-item">
+                <div class="book-text">
+                    <h3>bamii note blue style</h3>
+                    <p></p>
+                </div>
+                <div class="book-cover-container">
+                    <a href="https://amzn.asia/d/cA9o1oh">
+                        <img src="study4-cover.jpg" alt="学習帳4の表紙" class="book-cover">
+                    </a>
+                    <p class="book-price">¥1210</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // タブ切り替え関数
+        function showTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+            document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+            document.querySelector(`button[onclick="showTab('${tabId}')"]`).classList.add('active');
+        }
+
+        // スワイプによるタブ切り替え
+        let touchStartX = 0;
+        let touchEndX = 0;
+        const tabIds = ['philosophy', 'novels', 'photos', 'study'];
+
+        document.querySelector('.profile-container').addEventListener('touchstart', function(e) {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+
+        document.querySelector('.profile-container').addEventListener('touchend', function(e) {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            const swipeDistance = touchEndX - touchStartX;
+            if (swipeDistance > 50) {
+                // 右スワイプ: 前のタブに移動
+                const currentTab = document.querySelector('.tab-content.active').id;
+                const currentIndex = tabIds.indexOf(currentTab);
+                const nextIndex = (currentIndex - 1 + tabIds.length) % tabIds.length;
+                showTab(tabIds[nextIndex]);
+            } else if (swipeDistance < -50) {
+                // 左スワイプ: 次のタブに移動
+                const currentTab = document.querySelector('.tab-content.active').id;
+                const currentIndex = tabIds.indexOf(currentTab);
+                const nextIndex = (currentIndex + 1) % tabIds.length;
+                showTab(tabIds[nextIndex]);
+            }
+        }
+    </script>
+</body>
+</html>
+​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
