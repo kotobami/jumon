@@ -102,7 +102,7 @@ body {
 .book-text h3 {
     margin: 0;
     font-size: 18px;
-    color: #FFA500; /* タイトルをオレンジに */
+    color: #D3D3D3; /* タイトルを薄いグレーに */
 }
 
 .book-text p {
@@ -128,7 +128,7 @@ body {
 
 .book-price {
     font-size: 14px;
-    color: #FFA500; /* 価格をオレンジに */
+    color: #D3D3D3; /* 価格を薄いグレーに */
     margin: 0;
 }
 ​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
