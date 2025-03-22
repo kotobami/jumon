@@ -2,14 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000; /* 背景を黒に */
+    background-color: #333333; /* 背景を少し明るいグレーに変更 */
     color: #D3D3D3; /* 全体の文字色を薄いグレーに */
 }
 
 .profile-container {
     max-width: 600px;
     margin: 0 auto;
-    background-color: #000; /* プロフィールコンテナの背景を黒に */
+    background-color: #333333; /* プロフィールコンテナの背景も調整 */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 165, 0, 0.5); /* オレンジの影 */
 }
@@ -36,7 +36,7 @@ body {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 3px solid #000; /* アイコンの境界線を黒に */
+    border: 3px solid #333333; /* アイコンの境界線を背景色に合わせる */
 }
 
 .profile-info {
@@ -127,6 +127,7 @@ body {
     object-fit: cover;
     border-radius: 5px;
     margin-bottom: 10px; /* 画像と価格の間に余白を追加 */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7); /* 黒い影で立体感を維持 */
 }
 
 .book-price {
