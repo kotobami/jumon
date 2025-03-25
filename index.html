@@ -1,171 +1,175 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>著者セントラル</title>
- <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>著者セントラル</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
- <audio autoplay loop>
- <source src="omamurin-audio-no.mp3" type="audio/mpeg">
- Your browser does not support the audio element.
- </audio>
- <div class="profile-container">
- <div class="profile-header">
- <video class ="header-image" autoplay loop muted playsinline>
- <source src="header-video.mp4" type="video/mp4">
- Your browser does not support the video tag.
- </video>
- </div>
- <div class="profile-icon-container">
- <img src="Author.jpg" alt="著者のアイコン" class="profile-icon">
- </div>
- <div class="profile-info">
- <h1>言喰</h1>
- <p>ここは拙著の編纂と案内をするための空間になります。本の表紙をタップしていただきますと、それぞれの購入ページに飛びます。</p>
- </div>
- <div class="tabs">
- <button class="tab-button active" onclick="xyz456('philosophy')">哲学書</button>
- <button class="tab-button" onclick="xyz456('novels')">小説</button>
- <button class="tab-button" onclick="xyz456('photos')">写真集</button>
- <button class="tab-button" onclick="xyz456('study')">学習帳</button>
- </div>
- <div id="philosophy" class="tab-content active">
- <div class="book-item">
- <div class="book-text">
- <h3>言喰諸論</h3>
- <p>言喰の主著である哲学書。超越論や分析哲学をはじめとして、さまざまな議論を著している。その中では、多重帰納法を用いたグルーのパラドックスの解消法を提案している。</p>
- </div>
- <div class="book-cover-container">
- <a href="https://amzn.asia/d/0VygwY0">
- <img src="book1-cover.jpg" alt="哲学書1の表紙" class="book-cover">
- </a>
- <p class="book-price">¥3000</p>
- </div>
- </div>
- </div>
- <div id="novels" class="tab-content">
- <div class="book-item">
- <div class="book-text">
- <h3>赤淵村の記録</h3>
- <p>『言喰諸論』２－３０節に著した議論の敷衍と実践であり、因習の神経症的な側面を描いた作品である。</p>
- </div>
- <div class="book-cover-container">
- <a href="https://www.amazon.co.jp/%E8%B5%A4%E6%B7%B5%E6%9D%91%E3%81%AE%E8%A8%98%E9%8C%B2-%E8%A8%80%E5%96%B0-ebook/dp/B0DYYJY3VG/?_encoding=UTF8&pd_rd_w=UDty4&content-id=amzn1.sym.bb272e13-1a68-41b0-a370-44a252d487ac&pf_rd_p=bb272e13-1a68-41b0-a370-44a252d487ac&pf_rd_r=358-9358612-4206952&pd_rd_wg=sPZot&pd_rd_r=a9c0f482-0cc8-41c1-a01f-5b6a2505efb4&ref_=aufs_ap_sc_dsk">
- <img src="novel1-cover.jpg" alt="小説1の表紙" class="book-cover">
- </a>
- <p class="book-price">¥700</p>
- </div>
- </div>
- </div>
- <div id="photos" class="tab-content">
- <div class="book-item">
- <div class="book-text">
- <h3>架空の廃水族館・廃図書館</h3>
- <p>AI を用いて描出した架空の写真集であり、言喰の性癖を素直に表現している。</p>
- </div>
- <div class="book-cover-container">
- <a href="https://www.amazon.co.jp/%E6%9E%B6%E7%A9%BA%E3%81%AE%E5%BB%83%E6%B0%B4%E6%97%8F%E9%A4%A8%E3%83%BB%E5%BB%83%E5%9B%B3%E6%9B%B8%E9%A4%A8-%E8%A8%80%E5%96%B0-ebook/dp/B0DZWT5RDJ/?_encoding=UTF8&pd_rd_w=UDty4&content-id=amzn1.sym.bb272e13-1a68-41b0-a370-44a252d487ac&pf_rd_p=bb272e13-1a68-41b0-a370-44a252d487ac&pf_rd_r=358-9358612-4206952&pd_rd_wg=sPZot&pd_rd_r=a9c0f482-0cc8-41c1-a01f-5b6a2505efb4&ref_=aufs_ap_sc_dsk">
- <img src="photo1-cover.jpg" alt="写真集1の表紙" class="book-cover">
- </a>
- <p class="book-price">¥500</p>
- </div>
- </div>
- </div>
- <div id="study" class="tab-content">
- <div class="book-item">
- <div class="book-text">
- <h3>bamii note gray style</h3>
- <p></p>
- </div>
- <div class="book-cover-container">
- <a href="https://www.amazon.co.jp/bamii-note-gray-style-%E8%A8%80%E5%96%B0/dp/B0D5WK6NVB/?_encoding=UTF8&pd_rd_w=UDty4&content-id=amzn1.sym.bb272e13-1a68-41b0-a370-44a252d487ac&pf_rd_p=bb272e13-1a68-41b0-a370-44a252d487ac&pf_rd_r=358-9358612-4206952&pd_rd_wg=sPZot&pd_rd_r=a9c0f482-0cc8-41c1-a01f-5b6a2505efb4&ref_=aufs_ap_sc_dsk">
- <img src="study1-cover.jpg" alt="学習帳1の表紙" class="book-cover">
- </a>
- <p class="book-price">¥1210</p>
- </div>
- </div>
- <div class="book-item">
- <div class="book-text">
- <h3>bamii note green style</h3>
- <p></p>
- </div>
- <div class="book-cover-container">
- <a href="https://www.amazon.co.jp/bamii-note-green-style-%E8%A8%80%E5%96%B0/dp/B0D5WJVCBC/?_encoding=UTF8&pd_rd_w=UDty4&content-id=amzn1 .sym.bb272e13-1a68-41b0-a370-44a252d487ac&pf_rd_p=bb272e13-1a68-41b0-a370-44a252d487ac&pf_rd_r=358-9358612-4206952&pd_rd_wg=sPZot&pd_rd_r=a9c0f482-0cc8-41c1-a01f-5b6a2505efb4&ref_=aufs_ap_sc_dsk">
- <img src="study2-cover.jpg" alt="学習帳2の表紙" class="book-cover">
- </a>
- <p class="book-price">¥1210</p>
- </div>
- </div>
- <div class="book-item">
- <div class="book-text">
- <h3>bamii note red style</h3>
- <p></p>
- </div>
- <div class="book-cover-container">
- <a href="https://amzn.asia/d/3yueemb">
- <img src="study3-cover.jpg" alt="学習帳3の表紙" class="book-cover">
- </a>
- <p class="book-price">¥1210</p>
- </div>
- </div>
- <div class="book-item">
- <div class="book-text">
- <h3>bamii note blue style</h3>
- <p></p>
- </div>
- <div class="book-cover-container">
- <a href="https://amzn.asia/d/cA9o1oh">
- <img src="study4-cover.jpg" alt="学習帳4の表紙" class="book-cover">
- </a>
- <p class="book-price">¥1210</p>
- </div>
- </div>
- </div>
- </div>
- <script>
- function xyz456(abc123) {
- document.querySelectorAll('.tab-content').forEach(qwe789 => {
- qwe789.classList.remove('active');
- qwe789.style.opacity = 0;
- });
- const def456 = document.getElementById(abc123);
- def456.classList.add('active');
- setTimeout(() => {
- def456.style.opacity = 1;
- }, 10);
- document.querySelectorAll('.tab-button').forEach(jkl012 => jkl012.classList.remove('active'));
- document.querySelector(`button[onclick="xyz456('${abc123}')"]`).classList.add('active');
- }
+    <!-- BGM用のaudioタグ -->
+    <audio autoplay loop>
+        <source src="https://kotobami.github.io/jumon/omamurin-audio-no1471-bpm145-handlock.mp3" type="audio/mpeg">
+        お使いのブラウザはオーディオ要素をサポートしていません。
+    </audio>
 
- let pqr789 = 0;
- let stu012 = 0;
- const vwx345 = ['philosophy', 'novels', 'photos', 'study'];
+    <div class="profile-container">
+        <div class="profile-header">
+            <video class="header-image" autoplay loop muted playsinline>
+                <source src="header-video.mp4" type="video/mp4">
+                お使いのブラウザはビデオタグをサポートしていません。
+            </video>
+        </div>
+        <div class="profile-icon-container">
+            <img src="Author.jpg" alt="著者のアイコン" class="profile-icon">
+        </div>
+        <div class="profile-info">
+            <h1>言喰</h1>
+            <p>ここは拙著の編纂と案内をするための空間になります。本の表紙をタップしていただきますと、それぞれの購入ページに飛びます。</p>
+        </div>
+        <div class="tabs">
+            <button class="tab-button active" onclick="xyz456('philosophy')">哲学書</button>
+            <button class="tab-button" onclick="xyz456('novels')">小説</button>
+            <button class="tab-button" onclick="xyz456('photos')">写真集</button>
+            <button class="tab-button" onclick="xyz456('study')">学習帳</button>
+        </div>
+        <div id="philosophy" class="tab-content active">
+            <div class="book-item">
+                <div class="book-text">
+                    <h3>言喰諸論</h3>
+                    <p>言喰の主著である哲学書。超越論や分析哲学をはじめとして、さまざまな議論を著している。その中では、多重帰納法を用いたグルーのパラドックスの解消法を提案している。</p>
+                </div>
+                <div class="book-cover-container">
+                    <a href="https://amzn.asia/d/0VygwY0">
+                        <img src="book1-cover.jpg" alt="哲学書1の表紙" class="book-cover">
+                    </a>
+                    <p class="book-price">¥3000</p>
+                </div>
+            </div>
+        </div>
+        <div id="novels" class="tab-content">
+            <div class="book-item">
+                <div class="book-text">
+                    <h3>赤淵村の記録</h3>
+                    <p>『言喰諸論』２－３０節に著した議論の敷衍と実践であり、因習の神経症的な側面を描いた作品である。</p>
+                </div>
+                <div class="book-cover-container">
+                    <a href="https://www.amazon.co.jp/%E8%B5%A4%E6%B7%B5%E6%9D%91%E3%81%AE%E8%A8%98%E9%8C%B2-%E8%A8%80%E5%96%B0-ebook/dp/B0DYYJY3VG/?_encoding=UTF8&pd_rd_w=UDty4&content-id=amzn1.sym.bb272e13-1a68-41b0-a370-44a252d487ac&pf_rd_p=bb272e13-1a68-41b0-a370-44a252d487ac&pf_rd_r=358-9358612-4206952&pd_rd_wg=sPZot&pd_rd_r=a9c0f482-0cc8-41c1-a01f-5b6a2505efb4&ref_=aufs_ap_sc_dsk">
+                        <img src="novel1-cover.jpg" alt="小説1の表紙" class="book-cover">
+                    </a>
+                    <p class="book-price">¥700</p>
+                </div>
+            </div>
+        </div>
+        <div id="photos" class="tab-content">
+            <div class="book-item">
+                <div class="book-text">
+                    <h3>架空の廃水族館・廃図書館</h3>
+                    <p>AI を用いて描出した架空の写真集であり、言喰の性癖を素直に表現している。</p>
+                </div>
+                <div class="book-cover-container">
+                    <a href="https://www.amazon.co.jp/%E6%9E%B6%E7%A9%BA%E3%81%AE%E5%BB%83%E6%B0%B4%E6%97%8F%E9%A4%A8%E3%83%BB%E5%BB%83%E5%9B%B3%E6%9B%B8%E9%A4%A8-%E8%A8%80%E5%96%B0-ebook/dp/B0DZWT5RDJ/?_encoding=UTF8&pd_rd_w=UDty4&content-id=amzn1.sym.bb272e13-1a68-41b0-a370-44a252d487ac&pf_rd_p=bb272e13-1a68-41b0-a370-44a252d487ac&pf_rd_r=358-9358612-4206952&pd_rd_wg=sPZot&pd_rd_r=a9c0f482-0cc8-41c1-a01f-5b6a2505efb4&ref_=aufs_ap_sc_dsk">
+                        <img src="photo1-cover.jpg" alt="写真集1の表紙" class="book-cover">
+                    </a>
+                    <p class="book-price">¥500</p>
+                </div>
+            </div>
+        </div>
+        <div id="study" class="tab-content">
+            <div class="book-item">
+                <div class="book-text">
+                    <h3>bamii note gray style</h3>
+                    <p></p>
+                </div>
+                <div class="book-cover-container">
+                    <a href="https://www.amazon.co.jp/bamii-note-gray-style-%E8%A8%80%E5%96%B0/dp/B0D5WK6NVB/?_encoding=UTF8&pd_rd_w=UDty4&content-id=amzn1.sym.bb272e13-1a68-41b0-a370-44a252d487ac&pf_rd_p=bb272e13-1a68-41b0-a370-44a252d487ac&pf_rd_r=358-9358612-4206952&pd_rd_wg=sPZot&pd_rd_r=a9c0f482-0cc8-41c1-a01f-5b6a2505efb4&ref_=aufs_ap_sc_dsk">
+                        <img src="study1-cover.jpg" alt="学習帳1の表紙" class="book-cover">
+                    </a>
+                    <p class="book-price">¥1210</p>
+                </div>
+            </div>
+            <div class="book-item">
+                <div class="book-text">
+                    <h3>bamii note green style</h3>
+                    <p></p>
+                </div>
+                <div class="book-cover-container">
+                    <a href="https://www.amazon.co.jp/bamii-note-green-style-%E8%A8%80%E5%96%B0/dp/B0D5WJVCBC/?_encoding=UTF8&pd_rd_w=UDty4&content-id=amzn1.sym.bb272e13-1a68-41b0-a370-44a252d487ac&pf_rd_p=bb272e13-1a68-41b0-a370-44a252d487ac&pf_rd_r=358-9358612-4206952&pd_rd_wg=sPZot&pd_rd_r=a9c0f482-0cc8-41c1-a01f-5b6a2505efb4&ref_=aufs_ap_sc_dsk">
+                        <img src="study2-cover.jpg" alt="学習帳2の表紙" class="book-cover">
+                    </a>
+                    <p class="book-price">¥1210</p>
+                </div>
+            </div>
+            <div class="book-item">
+                <div class="book-text">
+                    <h3>bamii note red style</h3>
+                    <p></p>
+                </div>
+                <div class="book-cover-container">
+                    <a href="https://amzn.asia/d/3yueemb">
+                        <img src="study3-cover.jpg" alt="学習帳3の表紙" class="book-cover">
+                    </a>
+                    <p class="book-price">¥1210</p>
+                </div>
+            </div>
+            <div class="book-item">
+                <div class="book-text">
+                    <h3>bamii note blue style</h3>
+                    <p></p>
+                </div>
+                <div class="book-cover-container">
+                    <a href="https://amzn.asia/d/cA9o1oh">
+                        <img src="study4-cover.jpg" alt="学習帳4の表紙" class="book-cover">
+                    </a>
+                    <p class="book-price">¥1210</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
- document.querySelector('.profile-container').addEventListener('touchstart', function(yza678) {
- pqr789 = yza678.changedTouches[0].screenX;
- });
+    <!-- JavaScript -->
+    <script>
+        function xyz456(abc123) {
+            document.querySelectorAll('.tab-content').forEach(qwe789 => {
+                qwe789.classList.remove('active');
+                qwe789.style.opacity = 0;
+            });
+            const def456 = document.getElementById(abc123);
+            def456.classList.add('active');
+            setTimeout(() => {
+                def456.style.opacity = 1;
+            }, 10);
+            document.querySelectorAll('.tab-button').forEach(jkl012 => jkl012.classList.remove('active'));
+            document.querySelector(`button[onclick="xyz456('${abc123}')"]`).classList.add('active');
+        }
 
- document.querySelector('.profile-container').addEventListener('touchend', function(bcd901) {
- stu012 = bcd901.changedTouches[0].screenX;
- efg234();
- });
+        let pqr789 = 0;
+        let stu012 = 0;
+        const vwx345 = ['philosophy', 'novels', 'photos', 'study'];
 
- function efg234() {
- const hij567 = stu012 - pqr789;
- if (hij567 > 50) {
- const klm890 = document.querySelector('.tab-content.active').id;
- const nop123 = vwx345.indexOf(klm890);
- const qrs456 = (nop123 - 1 + vwx345.length) % vwx345.length;
- xyz456(vwx345[qrs456]);
- } else if (hij567 < -50) {
- const tuv789 = document.querySelector('.tab-content.active').id;
- const wxy012 = vwx345.indexOf(tuv789);
- const zab345 = (wxy012 + 1) % vwx345.length;
- xyz456(vwx345[zab345]);
- }
- }
- </script>
+        document.querySelector('.profile-container').addEventListener('touchstart', function(yza678) {
+            pqr789 = yza678.changedTouches[0].screenX;
+        });
+
+        document.querySelector('.profile-container').addEventListener('touchend', function(bcd901) {
+            stu012 = bcd901.changedTouches[0].screenX;
+            efg234();
+        });
+
+        function efg234() {
+            const hij567 = stu012 - pqr789;
+            if (hij567 > 50) {
+                const klm890 = document.querySelector('.tab-content.active').id;
+                const nop123 = vwx345.indexOf(klm890);
+                const qrs456 = (nop123 - 1 + vwx345.length) % vwx345.length;
+                xyz456(vwx345[qrs456]);
+            } else if (hij567 < -50) {
+                const tuv789 = document.querySelector('.tab-content.active').id;
+                const wxy012 = vwx345.indexOf(tuv789);
+                const zab345 = (wxy012 + 1) % vwx345.length;
+                xyz456(vwx345[zab345]);
+            }
+        }
+    </script>
 </body>
 </html>
