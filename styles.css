@@ -167,6 +167,8 @@ body {
     max-width: 600px;
     border-radius: 10px;
     position: relative;
+    max-height: 70vh; /* モーダルの最大高さをビューポート高さの70%に設定 */
+    overflow-y: auto; /* コンテンツが最大高さを超えたらスクロールバーを表示 */
 }
 
 .close-button {
