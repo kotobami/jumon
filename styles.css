@@ -56,6 +56,20 @@ body {
     font-size: 14px;
 }
 
+.recent-thoughts {
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.thoughts-button {
+    background: none;
+    border: none;
+    color: #FFA500; /* オレンジ色で統一 */
+    font-size: 16px;
+    cursor: pointer;
+    outline: none; /* タップ時の変色を無効化 */
+}
+
 .tabs {
     display: flex;
     justify-content: space-around;
@@ -134,4 +148,24 @@ body {
     font-size: 14px;
     color: #D3D3D3; /* 価格を薄いグレーに */
     margin: 0;
+}
+
+.thoughts-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.thoughts-list li {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #D3D3D3; /* テキスト色を薄いグレーに */
+}
+
+.thoughts-list li a {
+    color: #FFA500; /* リンクをオレンジに */
+    text-decoration: none; /* 下線を消す */
+}
+
+.thoughts-list li a:hover {
+    text-decoration: underline; /* ホバー時に下線を表示 */
 }
