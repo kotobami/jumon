@@ -24,9 +24,7 @@
         <div class="profile-info">
             <h1>言喰</h1>
             <p>ここは拙著の編纂と案内をするための空間になります。本の表紙をタップしていただきますと、それぞれの購入ページに飛びます。</p>
-        </div>
-        <div class="recent-thoughts">
-            <button class="thoughts-button" onclick="xyz456('thoughts')">さいきん考えている議論</button>
+            <button class="thoughts-button" onclick="openModal()">📔</button>
         </div>
         <div class="tabs">
             <button class="tab-button active" onclick="xyz456('philosophy')">哲学書</button>
@@ -89,44 +87,14 @@
                     <p class="book-price">¥1210</p>
                 </div>
             </div>
-            <div class="book-item">
-                <div class="book-text">
-                    <h3>bamii note green style</h3>
-                    <p></p>
-                </div>
-                <div class="book-cover-container">
-                    <a href="https://www.amazon.co.jp/bamii-note-green-style-%E8%A8%80%E5%96%B0/dp/B0D5WJVCBC/?_encoding=UTF8&pd_rd_w=UDty4&content-id=amzn1.sym.bb272e13-1a68-41b0-a370-44a252d487ac&pf_rd_p=bb272e13-1a68-41b0-a370-44a252d487ac&pf_rd_r=358-9358612-4206952&pd_rd_wg=sPZot&pd_rd_r=a9c0f482-0cc8-41c1-a01f-5b6a2505efb4&ref_=aufs_ap_sc_dsk">
-                        <img src="study2-cover.jpg" alt="学習帳2の表紙" class="book-cover">
-                    </a>
-                    <p class="book-price">¥1210</p>
-                </div>
-            </div>
-            <div class="book-item">
-                <div class="book-text">
-                    <h3>bamii note red style</h3>
-                    <p></p>
-                </div>
-                <div class="book-cover-container">
-                    <a href="https://amzn.asia/d/3yueemb">
-                        <img src="study3-cover.jpg" alt="学習帳3の表紙" class="book-cover">
-                    </a>
-                    <p class="book-price">¥1210</p>
-                </div>
-            </div>
-            <div class="book-item">
-                <div class="book-text">
-                    <h3>bamii note blue style</h3>
-                    <p></p>
-                </div>
-                <div class="book-cover-container">
-                    <a href="https://amzn.asia/d/cA9o1oh">
-                        <img src="study4-cover.jpg" alt="学習帳4の表紙" class="book-cover">
-                    </a>
-                    <p class="book-price">¥1210</p>
-                </div>
-            </div>
         </div>
-        <div id="thoughts" class="tab-content">
+    </div>
+
+    <!-- モーダルウィンドウ -->
+    <div id="thoughtsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h2>さいきん考えている議論</h2>
             <ul class="thoughts-list">
                 <li>『超越論哲学』</li>
                 <li>『人はなぜ笑うのか』</li>
@@ -152,6 +120,7 @@
             </ul>
         </div>
     </div>
+
     <script>
         function xyz456(abc123) {
             document.querySelectorAll('.tab-content').forEach(qwe789 => {
@@ -169,7 +138,7 @@
 
         let pqr789 = 0;
         let stu012 = 0;
-        const vwx345 = ['philosophy', 'novels', 'photos', 'study', 'thoughts'];
+        const vwx345 = ['philosophy', 'novels', 'photos', 'study'];
 
         document.querySelector('.profile-container').addEventListener('touchstart', function(yza678) {
             pqr789 = yza678.changedTouches[0].screenX;
@@ -193,6 +162,15 @@
                 const zab345 = (wxy012 + 1) % vwx345.length;
                 xyz456(vwx345[zab345]);
             }
+        }
+
+        // モーダルウィンドウの開閉
+        function openModal() {
+            document.getElementById('thoughtsModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('thoughtsModal').style.display = 'none';
         }
     </script>
 </body>
