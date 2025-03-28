@@ -7,7 +7,7 @@ body {
 }
 
 .profile-container {
-    max-width: 600px;
+    max-width: 1500px;
     margin: 0 auto;
     background-color: #333333;
     border-radius: 10px;
@@ -16,7 +16,7 @@ body {
 
 .profile-header {
     position: relative;
-    height: 150px;
+    height: 500px;
     overflow: hidden;
 }
 
@@ -40,18 +40,18 @@ body {
 }
 
 .profile-info {
-    padding: 20px;
+    padding: 10px;
     text-align: left;
 }
 
 .profile-info h1 {
-    margin: 10px 0 0;
+    margin: 5px 0 0;
     font-size: 24px;
     color: #D3D3D3;
 }
 
 .profile-info p {
-    margin: 10px 0 0;
+    margin: 5px 0 0;
     color: #D3D3D3;
     font-size: 14px;
 }
@@ -167,8 +167,8 @@ body {
     max-width: 600px;
     border-radius: 10px;
     position: relative;
-    max-height: 70vh; /* モーダルの最大高さをビューポート高さの70%に設定 */
-    overflow-y: auto; /* コンテンツが最大高さを超えたらスクロールバーを表示 */
+    max-height: 70vh;
+    overflow-y: auto;
 }
 
 .close-button {
