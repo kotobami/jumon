@@ -33,13 +33,13 @@ body {
 
 .profile-icon-container {
     position: relative;
-    margin-top: -50px;
+    margin-top: -30px; /* アイコンとbioの間隔を狭める */
     padding-left: 20px;
 }
 
 .profile-icon {
-    width: 100px;
-    height: 100px;
+    width: 80px; /* アイコンのサイズを小さくする */
+    height: 80px;
     border-radius: 50%;
     border: 3px solid #333333;
 }
@@ -49,16 +49,15 @@ body {
     text-align: left;
 }
 
-.profile-info h1 {
-    margin: 10px 0 0;
-    font-size: 24px;
-    color: #D3D3D3;
+.user-name-container {
+    display: flex; /* ユーザー名とボタンを横並びに */
+    align-items: center; /* 縦方向の中央揃え */
 }
 
-.profile-info p {
-    margin: 2px 0; /* bioの縦幅を抑えるために小さく設定 */
+.profile-info h1 {
+    margin: 0; /* マージンをリセットしてbioとの間隔を調整 */
+    font-size: 24px;
     color: #D3D3D3;
-    font-size: 14px;
 }
 
 .thoughts-button {
@@ -68,7 +67,13 @@ body {
     font-size: 20px;
     cursor: pointer;
     outline: none;
-    margin-top: 10px;
+    margin-left: 10px; /* ユーザー名とボタンの間隔を調整 */
+}
+
+.profile-info p {
+    margin: 2px 0; /* bioの縦幅を抑えるために小さく設定 */
+    color: #D3D3D3;
+    font-size: 14px;
 }
 
 .tabs {
