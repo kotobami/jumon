@@ -7,7 +7,7 @@ body {
 }
 
 .profile-container {
-    max-width: 1500px;
+    max-width: 600px;
     margin: 0 auto;
     background-color: #333333;
     border-radius: 10px;
@@ -16,7 +16,7 @@ body {
 
 .profile-header {
     position: relative;
-    height: 500px;
+    height: 150px;
     overflow: hidden;
 }
 
@@ -40,12 +40,12 @@ body {
 }
 
 .profile-info {
-    padding: 10px;
+    padding: 10px 20px;
     text-align: left;
 }
 
 .profile-info h1 {
-    margin: 5px 0 0;
+    margin: 10px 0 0;
     font-size: 24px;
     color: #D3D3D3;
 }
@@ -54,6 +54,7 @@ body {
     margin: 5px 0 0;
     color: #D3D3D3;
     font-size: 14px;
+    line-height: 1.2;
 }
 
 .thoughts-button {
@@ -199,3 +200,58 @@ body {
 .thoughts-list li a:hover {
     text-decoration: underline;
 }
+
+/* メディアクエリでデスクトップビューに対応 */
+@media (min-width: 768px) {
+    .profile-container {
+        max-width: 1500px;
+    }
+
+    .profile-header {
+        height: 500px;
+    }
+
+    .profile-icon-container {
+        margin-top: -100px;
+        padding-left: 40px;
+    }
+
+    .profile-icon {
+        width: 200px;
+        height: 200px;
+    }
+
+    .profile-info {
+        padding: 20px 40px;
+    }
+
+    .profile-info h1 {
+        font-size: 36px;
+    }
+
+    .profile-info p {
+        font-size: 18px;
+    }
+
+    .tab-button {
+        font-size: 18px;
+    }
+
+    .book-text h3 {
+        font-size: 24px;
+    }
+
+    .book-text p {
+        font-size: 18px;
+    }
+
+    .book-cover {
+        width: 120px;
+        height: 180px;
+    }
+
+    .book-price {
+        font-size: 18px;
+    }
+}
+```​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
